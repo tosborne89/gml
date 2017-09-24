@@ -1,0 +1,8 @@
+app/etc/local.xml
+var/backups
+var/cache
+var/session
+var/importexport
+var/report
+media/import
+media/catalog
