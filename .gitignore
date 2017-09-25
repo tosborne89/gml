@@ -6,3 +6,4 @@ var/importexport
 var/report
 media/import
 media/catalog
+skin/frontend/gml/default/scss/.sass-cache

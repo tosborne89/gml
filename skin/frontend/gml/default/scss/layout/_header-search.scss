@@ -31,13 +31,18 @@
 
     &:not(.skip-active):hover {
         .icon {
-            background-position: -50+4px (-150px + ($toolbar-icon-padding-offset/2));
+            width: 18px;
+            height: 18px;
+            background-image: url('../images/icons/search.svg');
+            background-repeat: no-repeat;
         }
     }
 
     .icon {
-        @extend .icon-sprite;
-        background-position: 0+4px (-150px + ($toolbar-icon-padding-offset/2));
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/icons/search.svg');
+        background-repeat: no-repeat;
     }
 }
 

@@ -1081,7 +1081,7 @@ a.button:hover {
  */
 /* line 561, ../scss/core/_common.scss */
 .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
-.sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
+.sorter > .view-mode .list, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
   background-image: url(../images/icon_sprite.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
@@ -1090,7 +1090,7 @@ a.button:hover {
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   /* line 568, ../scss/core/_common.scss */
   .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
-  .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
+  .sorter > .view-mode .list, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
     background-image: url(../images/icon_sprite@2x.png);
     background-size: 100px 1000px;
   }
@@ -3172,7 +3172,7 @@ body {
 /* -------------------------------------------- *
  * Skip - Link
  */
-/* line 195, ../scss/layout/_header.scss */
+/* line 202, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3184,17 +3184,17 @@ body {
   text-align: center;
 }
 
-/* line 206, ../scss/layout/_header.scss */
+/* line 213, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 210, ../scss/layout/_header.scss */
+/* line 217, ../scss/layout/_header.scss */
 .skip-link:not(.skip-active):hover {
   opacity: 0.8;
 }
 
-/* line 232, ../scss/layout/_header.scss */
+/* line 239, ../scss/layout/_header.scss */
 .skip-link {
   width: 25%;
 }
@@ -3205,7 +3205,7 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 258, ../scss/layout/_header.scss */
+/* line 265, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3213,13 +3213,13 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 265, ../scss/layout/_header.scss */
+/* line 272, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
-/* line 272, ../scss/layout/_header.scss */
+/* line 279, ../scss/layout/_header.scss */
 .skip-link .icon {
   margin-right: 3px;
 }
@@ -3227,12 +3227,12 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 282, ../scss/layout/_header.scss */
+/* line 289, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
-/* line 290, ../scss/layout/_header.scss */
+/* line 297, ../scss/layout/_header.scss */
 .skip-link .label {
   display: inline;
 }
@@ -3240,12 +3240,12 @@ a.skip-link {
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 300, ../scss/layout/_header.scss */
+/* line 307, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 304, ../scss/layout/_header.scss */
+/* line 311, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
@@ -3254,7 +3254,7 @@ a.skip-link {
 /* ============================================ *
  * Global Header Navigation
  * ============================================ */
-/* line 340, ../scss/layout/_header.scss */
+/* line 347, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
   top: 30px;
@@ -3274,25 +3274,31 @@ a.skip-link {
 }
 /* line 36, ../scss/layout/_header-nav.scss */
 .skip-nav:not(.skip-active):hover .icon {
-  background-position: -46px 4px;
+  width: 23px;
+  height: 17px;
+  background-image: url("../images/icons/burger.svg");
+  background-repeat: no-repeat;
 }
 
-/* line 42, ../scss/layout/_header-nav.scss */
+/* line 45, ../scss/layout/_header-nav.scss */
 .skip-nav .label {
   display: inline;
 }
 
-/* line 46, ../scss/layout/_header-nav.scss */
+/* line 49, ../scss/layout/_header-nav.scss */
 .skip-nav .icon {
-  background-position: 4px 4px;
+  width: 23px;
+  height: 17px;
+  background-image: url("../images/icons/burger.svg");
+  background-repeat: no-repeat;
 }
 
-/* line 55, ../scss/layout/_header-nav.scss */
+/* line 60, ../scss/layout/_header-nav.scss */
 .skip-nav {
   width: 25%;
 }
 
-/* line 65, ../scss/layout/_header-nav.scss */
+/* line 70, ../scss/layout/_header-nav.scss */
 .skip-nav {
   display: none;
 }
@@ -3300,7 +3306,7 @@ a.skip-link {
 /* ============================================ *
  * Nav - Skip Content
  * ============================================ */
-/* line 87, ../scss/layout/_header-nav.scss */
+/* line 92, ../scss/layout/_header-nav.scss */
 #header-nav {
   display: block;
   /* Force visibility */
@@ -3312,7 +3318,7 @@ a.skip-link {
 /* ============================================ *
  * Nav Primary
  * ============================================ */
-/* line 101, ../scss/layout/_header-nav.scss */
+/* line 106, ../scss/layout/_header-nav.scss */
 .nav-primary {
   display: block;
   margin-top: 15px;
@@ -3321,7 +3327,7 @@ a.skip-link {
 /* ============================================ *
  * General Navigation Styles
  * ============================================ */
-/* line 115, ../scss/layout/_header-nav.scss */
+/* line 120, ../scss/layout/_header-nav.scss */
 .nav-primary a {
   text-decoration: none;
   position: relative;
@@ -3330,22 +3336,22 @@ a.skip-link {
   line-height: 30px;
   font-family: "Domine", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
-/* line 124, ../scss/layout/_header-nav.scss */
+/* line 129, ../scss/layout/_header-nav.scss */
 .nav-primary li {
   position: relative;
 }
-/* line 128, ../scss/layout/_header-nav.scss */
+/* line 133, ../scss/layout/_header-nav.scss */
 .nav-primary li.level1 a {
   border-bottom: 1px solid #CCCCCC;
 }
 
-/* line 134, ../scss/layout/_header-nav.scss */
+/* line 139, ../scss/layout/_header-nav.scss */
 .nav-primary .menu-active > ul.level0,
 .nav-primary li.level0 li.sub-menu-active > ul {
   display: block;
 }
 
-/* line 139, ../scss/layout/_header-nav.scss */
+/* line 144, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 > a {
   text-transform: uppercase;
 }
@@ -3356,7 +3362,7 @@ a.skip-link {
 /* ============================================ *
  * Large Viewports - Dropdown Menu
  * ============================================ */
-/* line 202, ../scss/layout/_header-nav.scss */
+/* line 207, ../scss/layout/_header-nav.scss */
 .nav-primary {
   /* Default styles for 1+ drop-down menus */
   /* Level 2+ */
@@ -3364,29 +3370,29 @@ a.skip-link {
   /* Correct menus that will hang off the page (class added by js) */
   /* Level 1+ */
 }
-/* line 204, ../scss/layout/_header-nav.scss */
+/* line 209, ../scss/layout/_header-nav.scss */
 .nav-primary a.level0 {
   padding: 0 25px;
 }
-/* line 208, ../scss/layout/_header-nav.scss */
+/* line 213, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0,
 .nav-primary a.level0 {
   display: inline-block;
 }
-/* line 213, ../scss/layout/_header-nav.scss */
+/* line 218, ../scss/layout/_header-nav.scss */
 .nav-primary li:last-child > a {
   border-bottom: none;
 }
-/* line 217, ../scss/layout/_header-nav.scss */
+/* line 222, ../scss/layout/_header-nav.scss */
 .nav-primary a:hover,
 .nav-primary li:hover > a {
   color: #df2f25;
 }
-/* line 222, ../scss/layout/_header-nav.scss */
+/* line 227, ../scss/layout/_header-nav.scss */
 .nav-primary .menu-active {
   z-index: 200;
 }
-/* line 227, ../scss/layout/_header-nav.scss */
+/* line 232, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul {
   background: #FBFBFB;
   border: solid 1px #CCCCCC;
@@ -3401,31 +3407,31 @@ a.skip-link {
   display: none;
   /* Hide until displayed. */
 }
-/* line 240, ../scss/layout/_header-nav.scss */
+/* line 245, ../scss/layout/_header-nav.scss */
 .nav-primary li.level1 ul {
   left: 60px;
   top: 15px;
 }
-/* line 246, ../scss/layout/_header-nav.scss */
+/* line 251, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.position-test {
   display: block;
 }
-/* line 251, ../scss/layout/_header-nav.scss */
+/* line 256, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.spill {
   right: 0;
   left: auto;
 }
-/* line 256, ../scss/layout/_header-nav.scss */
+/* line 261, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.spill li.level1 ul {
   left: auto;
   right: 50px;
   top: 20px;
 }
-/* line 264, ../scss/layout/_header-nav.scss */
+/* line 269, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 li.parent > a {
   position: relative;
 }
-/* line 267, ../scss/layout/_header-nav.scss */
+/* line 272, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 li.parent > a:after {
   content: '';
   position: absolute;
@@ -3441,7 +3447,7 @@ a.skip-link {
   margin-top: -3px;
 }
 
-/* line 278, ../scss/layout/_header-nav.scss */
+/* line 283, ../scss/layout/_header-nav.scss */
 .nav-primary li.menu-active > ul {
   display: block;
 }
@@ -3451,14 +3457,20 @@ a.skip-link {
  * ============================================ */
 /* line 33, ../scss/layout/_header-search.scss */
 .skip-search:not(.skip-active):hover .icon {
-  background-position: -46px -146px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
 }
-/* line 38, ../scss/layout/_header-search.scss */
+/* line 41, ../scss/layout/_header-search.scss */
 .skip-search .icon {
-  background-position: 4px -146px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
 }
 
-/* line 48, ../scss/layout/_header-search.scss */
+/* line 53, ../scss/layout/_header-search.scss */
 .skip-search {
   display: none;
 }
@@ -3466,12 +3478,12 @@ a.skip-link {
 /* ============================================ *
  * Search - Skip Content
  * ============================================ */
-/* line 58, ../scss/layout/_header-search.scss */
+/* line 63, ../scss/layout/_header-search.scss */
 #header-search {
   padding: 20px;
 }
 
-/* line 66, ../scss/layout/_header-search.scss */
+/* line 71, ../scss/layout/_header-search.scss */
 #header-search {
   display: inline-block;
   width: 25%;
@@ -3484,18 +3496,18 @@ a.skip-link {
 /* ============================================ *
  * Search Input
  * ============================================ */
-/* line 81, ../scss/layout/_header-search.scss */
+/* line 86, ../scss/layout/_header-search.scss */
 #search_mini_form .input-box {
   position: relative;
   padding-top: 0;
 }
 
-/* line 86, ../scss/layout/_header-search.scss */
+/* line 91, ../scss/layout/_header-search.scss */
 #search_mini_form label {
   display: none;
 }
 
-/* line 90, ../scss/layout/_header-search.scss */
+/* line 95, ../scss/layout/_header-search.scss */
 #search {
   width: 100%;
   height: 40px;
@@ -3504,7 +3516,7 @@ a.skip-link {
   font-family: "Domine", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
-/* line 98, ../scss/layout/_header-search.scss */
+/* line 103, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button {
   text-indent: -9999px;
   position: absolute;
@@ -3516,7 +3528,7 @@ a.skip-link {
   background: none;
 }
 
-/* line 109, ../scss/layout/_header-search.scss */
+/* line 114, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:before {
   content: '';
   position: absolute;
@@ -3530,12 +3542,12 @@ a.skip-link {
   background-repeat: no-repeat;
 }
 
-/* line 122, ../scss/layout/_header-search.scss */
+/* line 127, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:hover:before {
   opacity: 0.8;
 }
 
-/* line 126, ../scss/layout/_header-search.scss */
+/* line 131, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:active:before {
   margin-top: -13px;
   margin-left: -13px;
@@ -8446,23 +8458,23 @@ div.paypal-logo span > img {
 .slideshow-pager span:before {
   content: '';
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   left: 50%;
   top: 50%;
   margin-left: -8px;
   margin-top: -8px;
-  border-radius: 1px;
-  background-color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #9b9b9b;
   position: relative;
 }
 /* line 96, ../scss/module/_slideshow.scss */
 .slideshow-pager span:hover:before {
-  background-color: #df2f25;
+  background-color: #f2f2f2;
 }
 /* line 100, ../scss/module/_slideshow.scss */
 .slideshow-pager span.cycle-pager-active:before {
-  background-color: #df2f25;
+  background-color: #f2f2f2;
 }
 /* line 105, ../scss/module/_slideshow.scss */
 .slideshow-pager > * {

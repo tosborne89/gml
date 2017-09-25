@@ -82,23 +82,23 @@
         &:before {
             content: '';
             display: block;
-            width: $pager-size;
-            height: $pager-size;
+            width: 10px;
+            height: 10px;
             left: 50%;
             top: 50%;
             margin-left: (-$pager-size/2);
             margin-top: (-$pager-size/2);
-            border-radius: 1px;
-            background-color: #FFFFFF;
+            border-radius: 50%;
+            background-color: $c-gray;
             position: relative;
         }
 
         &:hover:before {
-            background-color: $c-button-hover;
+            background-color: $c-light-gray;
         }
 
         &.cycle-pager-active:before {
-            background-color: $c-button-active;
+            background-color: $c-light-gray;
         }
     }
 
