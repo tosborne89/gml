@@ -267,20 +267,19 @@
     }
 
     .rating-box {
-        @extend .icon-sprite;
-        background-position: 0 -615px;
-        background-repeat: repeat-x;
-        height: 13px;
+        background-image: url('../images/icons/lobster-claw-grey.svg');
+        // background-repeat: no-repeat;
+        height: 25px;
+        width: 75px;
         overflow: hidden;
         text-indent: -9999px;
-        width: 65px;
+        margin-bottom: 10px;
 
         .rating {
-            @extend .icon-sprite;
-            background-position: 0 -600px;
+            background-image: url('../images/icons/lobster-claw.svg');
+            height: 25px;
             background-repeat: repeat-x;
             float: left;
-            height: 13px;
             text-indent: -9999px;
         }
     }
