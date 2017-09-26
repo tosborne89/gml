@@ -98,7 +98,7 @@
     .cart-forms,
     .cart-totals-wrapper,
     .crosssell {
-        width: 50%;
+        width: 100%;
     }
 
     .crosssell {
@@ -109,6 +109,12 @@
 
 .display-both-prices {
     @include oneColumnCartItems;
+}
+
+@include bp(max-width, $bp-xlarge) {
+    .cart-totals {
+        padding: 20px 10px;
+    }
 }
 
 @include bp(max-width, $bp-large) {
@@ -144,6 +150,20 @@
 /* ============================================ *
  * Checkout - Cart
  * ============================================ */
+.cart-left {
+    float: left;
+    padding: 30px 0;
+    border-bottom: 1px solid $c-light-gray;
+}
+
+.cart-right {
+    float: left;
+    padding: 30px 0 30px 15px;
+    min-height: 315px;
+    border-bottom: 1px solid $c-light-gray;
+    width: -webkit-calc(100% - 255px);
+    width: -moz-calc(100% - 255px);
+}
 
 .cart .page-title {
     margin-bottom: 15px;
@@ -270,25 +290,34 @@
 
     h2 {
         color: $c-h2;
-        font-size: $f-size;
-        font-weight: 600;
+        font-size: $f-size-xl;
+        font-weight: 300;
         margin-bottom: 0;
     }
 
     thead th,
     tbody td {
         background-color: transparent;
-        padding: 10px 5px;
+        padding: 30px 5px;
         font-family: $f-stack-special;
     }
 
-    .product-cart-info,
+    .product-cart-info {
+        padding: 30px 0 15px 15px;
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
     .product-cart-actions {
-        padding-left: 15px;
+        padding: 0 0 15px 15px;
+        float: left;
+        display: block;
+        width: 100%;
     }
 
     tr {
-
+        border-bottom: 1px solid $c-light-gray;
     }
 
     tfoot {
@@ -317,6 +346,7 @@
     .product-cart-image {
         padding-left: 0;
         padding-right: 0;
+        min-width: 20px;
 
         .product-image img {
             max-width: 100%;
@@ -343,9 +373,50 @@
         float: left;
     }
 
-    .product-cart-total,
+    .product-cart-total {
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0 0 15px 15px;
+
+        .price {
+            font-size: $f-size-l;
+            font-weight: 300;
+        }
+
+        label {
+            float: left;
+            width: auto;
+            margin-right: 5px;
+            color: $c-gray;
+            font-weight: 300;
+            font-size: $f-size-l;
+        }
+    }
+
     .product-cart-price {
-        text-align: center;
+
+    }
+
+    .product-cart-remove {
+        float: left;
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 0 0 15px 15px;
+        margin-bottom: 15px;
+    }
+
+    .product-cart-badge {
+        width: 100%;
+        float: left;
+        padding: 0 0 15px 15px;
+        display: block;
+
+        img {
+            width: 25%;
+        }
     }
 
     .cart-tax-total {
@@ -375,6 +446,15 @@
         min-width: 65px;
         font-size: $f-size-s;
 
+        .edit-btn {
+            background-color: $c-gray;
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+            color: $c-light-gray;
+            border-radius: 4px;
+        }
+
         > a {
             display: block;
         }
@@ -385,20 +465,37 @@
     }
 
     .product-cart-actions {
-        min-width: 60px;
-        text-align: center;
+        text-align: left;
+        width: 100%;
+        float: left;
+        display: block;
+
+        label {
+            float: left;
+            width: auto;
+            margin-right: 5px;
+            color: $c-gray;
+            font-weight: 300;
+            font-size: $f-size-l;
+        }
+
+        .cart-links {
+            float: left;
+        }
 
         .qty {
             height: 30px;
             border-color: $c-input-border;
-            border-radius: 0;
+            border-radius: 4px;
             margin-bottom: 10px;
             text-align: center;
             width: 3.2em;
+            float: left;
         }
 
         .button {
             margin-bottom: 5px;
+            line-height: inherit;
         }
     }
 
@@ -490,7 +587,7 @@
         }
 
         h2 {
-            font-size: $f-size-xs;
+            font-size: $f-size-l;
         }
 
         .cart-links {
@@ -573,6 +670,16 @@
 
         .product-cart-actions {
             text-align: left;
+            width: auto;
+            float: left;
+
+            label {
+                width: auto;
+                float: left;
+                margin-right: 5px;
+                font-size: $f-size-l;
+                color: $c-gray;
+            }
 
             .qty {
                 margin-right: 7px;
@@ -793,7 +900,6 @@
 
             td {
                 font-size: 20px;
-                padding: 2px 5px;
                 vertical-align: top;
                 text-align: left;
             }
