@@ -116,8 +116,12 @@ body.cms-home .slideshow-container {
   padding: 0;
   max-width: 1110px;
 }
+/* line 106, ../scss/content/_home.scss */
+.promos li {
+  position: relative;
+}
 
-/* line 107, ../scss/content/_home.scss */
+/* line 111, ../scss/content/_home.scss */
 .promos:after {
   content: '';
   display: table;
@@ -125,7 +129,7 @@ body.cms-home .slideshow-container {
 }
 
 /* Specifying the body only in order to override the .std ul li styling */
-/* line 113, ../scss/content/_home.scss */
+/* line 117, ../scss/content/_home.scss */
 body .promos > li {
   margin: 0 0 10px 0;
   list-style: none;
@@ -139,25 +143,25 @@ body .promos > li {
   user-select: none;
 }
 
-/* line 122, ../scss/content/_home.scss */
+/* line 126, ../scss/content/_home.scss */
 .promos > li:last-child {
   margin-bottom: 0;
 }
 
-/* line 126, ../scss/content/_home.scss */
+/* line 130, ../scss/content/_home.scss */
 .promos img {
   max-width: 100%;
   width: 100%;
 }
 
-/* line 131, ../scss/content/_home.scss */
+/* line 135, ../scss/content/_home.scss */
 .promos a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: block;
 }
 
-/* line 136, ../scss/content/_home.scss */
+/* line 140, ../scss/content/_home.scss */
 .promos span {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -171,7 +175,7 @@ body .promos > li {
   text-shadow: 1px 1px 3px #555555;
 }
 
-/* line 149, ../scss/content/_home.scss */
+/* line 153, ../scss/content/_home.scss */
 .promos strong {
   font-weight: 600;
   font-size: 26px;
@@ -179,36 +183,36 @@ body .promos > li {
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 157, ../scss/content/_home.scss */
+  /* line 161, ../scss/content/_home.scss */
   .promos span {
     font-size: 16px;
   }
 
-  /* line 161, ../scss/content/_home.scss */
+  /* line 165, ../scss/content/_home.scss */
   .promos strong {
     font-size: 17px;
   }
 
   /* Config: Three columns + flexible gutter */
-  /* line 168, ../scss/content/_home.scss */
+  /* line 172, ../scss/content/_home.scss */
   body .promos > li {
     float: left;
     width: 31.74603%;
     margin-right: 2.38095%;
   }
 
-  /* line 174, ../scss/content/_home.scss */
+  /* line 178, ../scss/content/_home.scss */
   .promos > li:nth-child(3n) {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 880px) {
-  /* line 180, ../scss/content/_home.scss */
+  /* line 184, ../scss/content/_home.scss */
   .promos span {
     font-size: 18px;
   }
 
-  /* line 184, ../scss/content/_home.scss */
+  /* line 188, ../scss/content/_home.scss */
   .promos strong {
     font-size: 24px;
   }
@@ -218,7 +222,7 @@ body .promos > li {
  */
 /* Hiding the reviews content via CSS because we can't modify the template, */
 /* since it may be used in other places where those elements are needed */
-/* line 202, ../scss/content/_home.scss */
+/* line 206, ../scss/content/_home.scss */
 .cms-index-index h2.subtitle {
   padding: 6px 0;
   text-align: center;
@@ -228,9 +232,60 @@ body .promos > li {
   border-top: 1px solid #CCCCCC;
 }
 
-/* line 211, ../scss/content/_home.scss */
+/* line 215, ../scss/content/_home.scss */
 .cms-index-noroute h2.subtitle {
   display: none;
+}
+
+/* line 219, ../scss/content/_home.scss */
+.block-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 226, ../scss/content/_home.scss */
+.block-overlay-text {
+  font-size: 35px !important;
+}
+/* line 230, ../scss/content/_home.scss */
+.block-overlay-button {
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  height: 50px;
+  line-height: 50px;
+  width: 160px;
+  top: 57.5%;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+}
+/* line 242, ../scss/content/_home.scss */
+.block-overlay-button:hover {
+  text-decoration: none;
+  color: #f2f2f2;
+  display: inline-block !important;
+}
+
+/* line 250, ../scss/content/_home.scss */
+.home-text {
+  text-align: center;
+  max-width: 855px;
+  margin: 80px auto;
+}
+/* line 255, ../scss/content/_home.scss */
+.home-text h1 {
+  font-size: 35px;
+}
+/* line 259, ../scss/content/_home.scss */
+.home-text p {
+  margin-bottom: 5px;
+}
+/* line 263, ../scss/content/_home.scss */
+.home-text .gml-red {
+  color: #df2f25;
 }
 
 /* ============================================ *
